@@ -1,9 +1,11 @@
 const CONF = {
+
+   
     port: '5757',
     rootPathname: '',
 
     // 微信小程序 App ID
-    appId: '',
+  appId: 'wxc04fa7c1da8c1ee8',
 
     // 微信小程序 App Secret
     appSecret: '',
@@ -18,10 +20,10 @@ const CONF = {
      */
     mysql: {
         host: 'localhost',
-        port: 3306,
+        port: 3006,
         user: 'root',
         db: 'cAuth',
-      pass: 'wxc04fa7c1da8c1ee8',
+        pass: 'wxc04fa7c1da8c1ee8',
         char: 'utf8mb4'
     },
 

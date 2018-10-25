@@ -20,17 +20,18 @@ export function showSuccess(text){
         icon:'success'
     })
 }
-export function request(url,data,method) { 
+ function request(url,method,data) { 
     return new Promise((resolve,reject)=>{
         wx.request({
             data,
             url:'https://uc0ju7rw.qcloud.la'+url,
             method,
             success:function(res){
-                if (res.data.code==0) {
+                if (res.data.code === 0) {
                     resolve(res.data.data)
                     
                 }else{
+                    console.log('failed')
                     reject(res.data)
                 }
             }
